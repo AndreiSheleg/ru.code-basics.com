@@ -1,6 +1,8 @@
-// BEGIN
-const getHiddenCard = (cardNumber, starsCount = 6) => {
-  const visibleDigitsLine = cardNumber.slice(12);
-  return `${'*'.repeat(starsCount)}${visibleDigitsLine}`;
+// BEGIN (write your solution here)
+const getHiddenCard = (cardNumber, base = 4) => {
+  const result = cardNumber.slice(-4);
+  return `${'*'.repeat(base)}${result}`;
 };
 // END
+
+export default getHiddenCard;
